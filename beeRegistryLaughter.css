@@ -1,0 +1,67 @@
+/*HTML and Body settings*/
+	html 
+	{
+		color: #7A5600;
+		background-color: rgb(255, 255, 237);
+		font-family: Arial, monaco, monospace; 	
+		font-weight: 700;
+	}
+
+	h1 
+	{
+		font-family: Arial Black;	
+		background-color: rgb(250, 255, 245);
+		border-radius: 10px;
+		box-shadow: 0px 5px 5px rgba(0, 0, 0, 0.2);
+	}
+	
+	body 
+	{
+		background-color: rgb(245, 235, 217);
+		margin-left: auto; 
+		margin-right: auto;
+		max-width: 1080px; 
+		min-width: 640px; 
+		width: 95%;  
+		padding: 50px;
+		vertical-align: center;
+		height: 100%;
+		border-radius: 10px;
+		box-shadow: 0px 5px 5px rgba(0, 0, 0, 0.2);
+	}
+	
+	html, body 
+	{
+    overflow: auto; 
+	}
+
+	.DisplayTable 
+	{
+		border-collapse: collapse; 
+		width: 100%;
+	}
+
+	.DisplayTable th,
+	.DisplayTable td 
+	{
+		border: 2px solid black; 
+		padding: 8px;
+		vertical-align: top;
+		max-width: 200px;
+		word-wrap: break-word;
+		overflow: hidden;
+		height: 75px; 
+	}
+	
+	.DisplayTable th 
+	{
+		height: 50px; 
+		vertical-align: middle;
+		font-family: Arial Black;	
+		background-color: rgb(225, 215, 197);
+	}
+	
+	p 
+	{
+		text-align: center;
+	}

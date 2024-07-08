@@ -1,0 +1,41 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd"> 
+<html lang="en">
+	<head> <!--This is the starting file-->
+		<title>Saints Hope Farm Beehive Documentation - Kolby Laughter</title> 
+		<meta http-equiv="content-type"content="text/html; charset=iso-8859-1" /> 
+		<link href="beeRegistryLaughter.css" rel="stylesheet"/> <!--link to css code so the page can look a little nicer-->
+		<h1 style ="text-align:center">Saints Hope Farm Beehive Documentation</h1>
+	</head>
+	<body "vertical-align:center"> 
+	
+	
+	<h2 style = "text-align:center"><br>Enter Beehive Data Here</h2>
+	
+	<form style = "text-align:center" name="inputForm" action="beeRegistryLaughter.php" method="post"><!-- form that sends input to the php script for processing -->
+		<p>Keeper Name:&emsp;&ensp;<input type="text" name="Name" /></p> <!--The text forms are the only ones that need validation in this program-->
+		<p>Inspection Date:&emsp;&ensp;<input type="date" name="Date" /></p>
+		<p>Green House Number:&emsp;&ensp;<input type="number" name="GreenHouse" min="1" max="10" value="1"></p><!--Min max values and default value so user cannot put erroneous data-->
+		
+		<p> <!--A set of radio buttons for Yes and No so that the user can only put the correct form of input-->
+		Clean and Organized:&ensp;<input type="radio" name="Choice" id="yes" value='Y' checked>
+		<label for="yes">Yes</label>
+		<input type="radio" name="Choice" id="no" value='N'>
+		<label for="no">No</label>
+		</p>
+		<p>Select Beehive Stage: <select name="HiveLevel"> <!--A dropdown menu for the hive stages to make the user experience easier-->
+			<option value="1">Stage 1 (New)</option>
+			<option value="2">Stage 2 (Medium Growth)</option>
+			<option value="3">Stage 3 (Ready for Harvest)</option>
+		</select></p>
+		
+		<p>Problems: <br><textarea name="Problem" rows="5" cols="30" placeholder="Please state any problems or concerns with the hive here (if any): "></textarea></p> <!--Textarea for the comments box so the user can write longer strings-->
+	
+		<p><input type="reset" value="Clear Form" />&nbsp; &nbsp;<input type="submit" name="Submit" value= "Send Form" /> <!--Clear form and submit button for functionality-->	
+	</form>
+	
+	<form style = "text-align:center" action="showBeeRegistry.php" method="post"><!--Seperate form for the viewing of the file contents feature  (managed by a different script)-->
+        <button type="submit" name="showContents">Show File Contents</button>
+	</form>
+		
+	</body>
+</html>
